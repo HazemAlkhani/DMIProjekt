@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dmiprojekt.DMIProjectController">
+   <children>
+      <Label layoutX="66.0" layoutY="38.0" text="Station">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateTimeLabel" layoutX="65.0" layoutY="272.0" text="Date/Time end">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="startDateLabel" layoutX="29.0" layoutY="305.0" text="Date" />
+      <Label fx:id="endDateLabel" layoutX="29.0" layoutY="337.0" text="Hour" />
+      <ListView fx:id="weatherDataLV" layoutX="14.0" layoutY="397.0" prefHeight="265.0" prefWidth="200.0" />
+      <Label fx:id="weatherDataLabel" layoutX="50.0" layoutY="364.0" text="Weather Data">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel" layoutX="303.0" layoutY="26.0" text="DMI Weather Data">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="stationCB" layoutX="28.0" layoutY="80.0" prefWidth="150.0" />
+      <DatePicker fx:id="dateEndCal" layoutX="60.0" layoutY="301.0" />
+      <ComboBox fx:id="hourEndCB" layoutX="61.0" layoutY="335.0" prefWidth="150.0" />
+      <Label fx:id="dateTimeLabel1" layoutX="65.0" layoutY="150.0" text="Date/Time start">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="startDateLabel1" layoutX="29.0" layoutY="185.0" text="Date" />
+      <Label fx:id="endDateLabel1" layoutX="29.0" layoutY="218.0" text="Hour" />
+      <DatePicker fx:id="dateStartCal" layoutX="60.0" layoutY="181.0" />
+      <ComboBox fx:id="hourStartCB" layoutX="61.0" layoutY="215.0" prefHeight="26.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
